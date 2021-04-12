@@ -1,6 +1,6 @@
 export default {
-  name: "category",
-  title: "Category",
+  name: "universities",
+  title: "Universities",
   type: "document",
   fields: [
     {
@@ -9,9 +9,9 @@ export default {
       type: "string",
     },
     {
-      name: "description",
-      title: "Description",
-      type: "text",
+      name: "link",
+      title: "link",
+      type: "url",
     },
   ],
 };
