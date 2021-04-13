@@ -85,6 +85,11 @@ export default {
       type: "blockContent",
     },
     {
+      name: "abstract",
+      title: "Abstract",
+      type: "text",
+    },
+    {
       name: "vimeoLink",
       title: "Link de Vimeo",
       type: "url",

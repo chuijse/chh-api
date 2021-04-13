@@ -13,5 +13,10 @@ export default {
       title: "link",
       type: "url",
     },
+    {
+      name: "acronym",
+      title: "Acronym",
+      type: "string",
+    },
   ],
 };
