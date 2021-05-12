@@ -58,26 +58,15 @@ export default {
       type: "mainImage",
     },
     {
-      name: "body",
-      title: "Body",
-      type: "blockContent",
-    },
-    {
       name: "abstract",
       title: "Abstract",
       type: "text",
     },
     {
-      name: "vimeoLink",
-      title: "Link de Vimeo",
-      type: "url",
+      name: "body",
+      title: "Body",
+      type: "blockContent",
     },
-    {
-      name: "videos",
-      title: "Videos",
-      type: "videos",
-    },
-
     {
       name: "imageGallery",
       title: "Image gallery",

@@ -14,10 +14,14 @@ import colleagues from "./colleagues";
 import tecnologies from "./tecnologies";
 import universities from "./universities";
 import mainImage from "./mainImage";
-import videos from "./videos";
+import twoVideos from "./twoVideos";
 import videoFile from "./videoFile";
 import image from "./image";
 import ImageGallery from "./ImageGallery";
+import videoEmbed from "./videoEmebed";
+import threeVideos from "./oneVideo";
+import oneVideo from "./threeVideos";
+import blockImage from "./bockImage";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,16 +34,20 @@ export default createSchema({
     // in the studio.
     post,
     author,
+    videoEmbed,
     category,
     courses,
     colleagues,
     tecnologies,
     universities,
     mainImage,
-    videos,
+    twoVideos,
     videoFile,
+    threeVideos,
+    oneVideo,
     image,
     ImageGallery,
+    blockImage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
