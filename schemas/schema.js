@@ -16,12 +16,14 @@ import universities from "./universities";
 import mainImage from "./mainImage";
 import twoVideos from "./twoVideos";
 import videoFile from "./videoFile";
-import image from "./image";
+import photo from "./photo";
 import ImageGallery from "./ImageGallery";
 import videoEmbed from "./videoEmebed";
 import threeVideos from "./oneVideo";
 import oneVideo from "./threeVideos";
 import blockImage from "./bockImage";
+import areaContent from "./areaContent";
+import role from "./role";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,8 +37,10 @@ export default createSchema({
     post,
     author,
     videoEmbed,
+    areaContent,
     category,
     courses,
+    role,
     colleagues,
     tecnologies,
     universities,
@@ -45,7 +49,7 @@ export default createSchema({
     videoFile,
     threeVideos,
     oneVideo,
-    image,
+    photo,
     ImageGallery,
     blockImage,
     // When added to this list, object types can be used as

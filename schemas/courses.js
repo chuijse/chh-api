@@ -2,6 +2,9 @@ export default {
   name: "courses",
   title: "Courses",
   type: "document",
+  initialValue: {
+    bestWork: false,
+  },
   fields: [
     {
       name: "title",
@@ -20,7 +23,7 @@ export default {
       title: "Slug",
       type: "slug",
       options: {
-        source: "title",
+        source: (doc) => `${doc.title}-${doc.semester}-${doc.year}`,
         maxLength: 96,
       },
     },
@@ -31,9 +34,21 @@ export default {
       of: [{ type: "reference", to: { type: "colleagues" } }],
     },
     {
-      name: "assistant",
-      title: "Assistant",
-      type: "string",
+      name: "role",
+      title: "Role in Course",
+      type: "reference",
+      to: { type: "role" },
+    },
+    {
+      name: "bestWork",
+      title: "Best work ?",
+      type: "boolean",
+    },
+    {
+      name: "courseContent",
+      title: "Course Contents",
+      type: "array",
+      of: [{ type: "reference", to: { type: "areaContent" } }],
     },
     {
       name: "universities",
@@ -57,6 +72,7 @@ export default {
       title: "Main image",
       type: "mainImage",
     },
+
     {
       name: "abstract",
       title: "Abstract",

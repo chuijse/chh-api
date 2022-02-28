@@ -3,13 +3,13 @@ export default {
   title: "Image gallery",
   type: "array",
   options: {
-    layout: "grid",
+    //layout: "grid",
   },
   of: [
     {
-      name: "photos",
-      title: "Photos",
-      type: "photos",
+      name: "photo",
+      title: "Photo",
+      type: "photo",
     },
   ],
 };
